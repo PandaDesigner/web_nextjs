@@ -1,0 +1,9 @@
+.menu-container{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.menu-container a{
+    margin-left: 10px;
+    font-weight: 600;
+}
