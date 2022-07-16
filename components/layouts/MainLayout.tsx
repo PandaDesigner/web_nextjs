@@ -1,9 +1,10 @@
+import { FC } from "react"
 import Head from "next/head"
+import Link from "next/link"
 import { NavBar } from "../NavBar"
 import styles from "../layouts/MainLayout.module.css"
-import Link from "next/link"
 
-export const MainLayout = ({children, titleH, metaContent }) => {
+export const MainLayout: FC = ({children, titleH, metaContent }) => {
   return (
     <>
       <NavBar/>
@@ -11,7 +12,6 @@ export const MainLayout = ({children, titleH, metaContent }) => {
         <Head>
             <title>{titleH}</title>
             <meta name="description" content= {metaContent} />
-            <Link rel="icon" href='/favicon.ico' />
             <meta name="keywords" content="diseño grafico, diseño web, grafict designers, react web"/>
         </Head>
         <main className={styles.main}>
