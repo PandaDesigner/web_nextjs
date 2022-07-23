@@ -1,8 +1,9 @@
+import { FC } from 'react'
 import Link  from 'next/link'
 import { MainLayout } from '../components/layouts'
 
 
-export default function HomePage() {
+export default function HomePage: FC () {
   return (
     <>
         <MainLayout titleH = {"Home - pandaDesigners"} metaContent={"Home Page PandaDesigners"} >

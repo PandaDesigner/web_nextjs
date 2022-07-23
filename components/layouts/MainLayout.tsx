@@ -4,7 +4,12 @@ import Link from "next/link"
 import { NavBar } from "../NavBar"
 import styles from "../layouts/MainLayout.module.css"
 
-export const MainLayout: FC = ({children, titleH, metaContent }) => {
+interface Props {
+  titleH: string;
+  metaContent: string;
+}
+
+export const MainLayout: FC<Props> = ({children, titleH, metaContent }) => {
   return (
     <>
       <NavBar/>
