@@ -3,7 +3,7 @@ import Link  from 'next/link'
 import { MainLayout } from '../components/layouts'
 
 
-export default function HomePage: FC () {
+export default function HomePage() {
   return (
     <>
         <MainLayout titleH = {"Home - pandaDesigners"} metaContent={"Home Page PandaDesigners"} >
